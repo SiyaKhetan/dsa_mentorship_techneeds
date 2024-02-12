@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool linearsearch(int num,int n ,vector<int>&arr){
+    for(int i =0;i<n;i++){
+        if(arr[i]==num){
+            return true ;
+        }
+        
+    }
+    return false;
+}
+
+
+int main() {
+    // Write C++ code here
+   vector<int>arr={1,3,4,5,2,4,6};
+   int n =arr.size();
+   int num;
+   cin>>num;
+   cout<<"is num in  the vector?"<<(linearsearch(num,n,arr)?"yes":"no")<<endl;
+
+    return 0;
+}  
