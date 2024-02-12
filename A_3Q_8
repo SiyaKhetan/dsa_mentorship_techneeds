@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std ;
+int largestnumber(vector<int>& nums,int n ){
+    int  max=nums[0];
+    for(int i =0;i<n;i++){
+        if(nums[i]>max){
+            max=nums[i];
+        }
+    }
+    return max;
+}
+    
+int main (){
+    vector <int>nums={1,3,5,7,9,2};
+    int n =nums.size();
+    cout<<"the largest number is "<< largestnumber(nums,n)<<endl;
+    return 0 ;
+} 
